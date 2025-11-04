@@ -3,7 +3,7 @@ import Project from "../components/ProjectSection";
 export default function Home() {
   return (
     <main
-      className="w-full h-screen flex justify-center font-serif"
+      className="w-full min-h-screen flex justify-center font-serif"
       style={{
         background: "#000000",
         backgroundImage: `
@@ -13,9 +13,9 @@ export default function Home() {
         backgroundSize: "40px 40px",
       }}
     >
-      <div className=" w-full p-5 mx-2 md:w-[70%] bg-black">
+      <div className=" w-full min-h-screen p-5 md:w-[70%] ">
            <ProfileSection></ProfileSection>
-          <Project></Project>
+           <Project></Project>
       </div>
       
     </main>
