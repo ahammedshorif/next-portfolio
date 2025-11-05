@@ -3,7 +3,7 @@ import Project from "../components/ProjectSection";
 export default function Home() {
   return (
     <main
-      className="w-full min-h-screen flex justify-center font-serif"
+      className="w-full min-h-screen flex justify-center Open Sans"
       style={{
         background: "#000000",
         backgroundImage: `

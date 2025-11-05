@@ -12,7 +12,7 @@ const ProfileSection = () => {
             height={100}
             className="rounded-xl"
           />
-          <h1 className="text-4xl mt-4 font-md">Hi, I'm Shorif</h1>
+          <h1 className="text-4xl mt-4 font-medium">Hi, I'm Shorif</h1>
           <p className="text-[#8B8B8B]">Cumilla | Full Stack Developer</p>
           
         </div>
