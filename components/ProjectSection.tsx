@@ -41,7 +41,7 @@ const ProjectSection = () => {
 
   return (
     <div className="w-full flex justify-center">
-      <div className="w-full md:w-[95%]">
+      <div className="w-full md:w-[95%] ml-2">
         <h1 className="text-2xl  text-blue-400 pt-5 ">Project</h1>
         <p className="text-[#8B8B8B] pt-1">
           A collection of my work spanning from blockchain applications to

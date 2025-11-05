@@ -1,15 +1,15 @@
 import Image from "next/image";
-import { Github, Instagram, Twitter } from "lucide-react";
+import { Github, Twitter,Linkedin } from "lucide-react";
 const ProfileSection = () => {
   return (
     <div>
       <div className="flex justify-between mt-12">
         <div>
           <Image
-            src="/profile.png"
+            src="/photo.png"
             alt="Description of my image"
-            width={100}
-            height={100}
+            width={120}
+            height={120}
             className="rounded-xl"
           />
           <h1 className="text-4xl mt-4 font-medium">Hi, I'm Shorif</h1>
@@ -18,7 +18,7 @@ const ProfileSection = () => {
         </div>
         <div className="flex gap-7 pt-4 pr-4 h-[50px]">
           <a  className="" href="https://github.com/ahammedshorif/" target="to_blank">
-            {" "}
+            
             <Github
               size={25}
               color="#ffffff"
@@ -26,17 +26,18 @@ const ProfileSection = () => {
               className="cursor-pointer"
             />
           </a>
-          <a href="https://github.com/ahammedshorif/" target="to_blank">
-            {" "}
-            <Instagram
+          <a href="https://www.linkedin.com/in/ahammedsh0rif/" target="to_blank">
+          
+            <Linkedin 
               size={25}
               color="#ffffff"
               strokeWidth={1.25}
               className="cursor-pointer"
+            
             />
           </a>
-          <a href="https://github.com/ahammedshorif/" target="to_blank">
-            {" "}
+          <a href="https://x.com/ahammedsh0rif" target="to_blank">
+            
             <Twitter
               size={25}
               color="#ffffff"
