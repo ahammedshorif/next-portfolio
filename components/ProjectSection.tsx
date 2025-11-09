@@ -2,7 +2,7 @@
 const ProjectSection = () => {
   const projects = [
     {
-      title: "Solana Token Launchpad | ReactJS , @solana/web3.js",
+      title: "Solana Token Launchpad",
       description:
         "A Solana Token Launchpad built in React using @solana/web3.js and @solana/spl-token enables users to create, mint, and manage Solana tokens through a seamless decentralized UI. It provides wallet integration, token configuration, and on-chain deployment for fast and secure token launches.",
       date: "Sep 4, 2025",
@@ -58,7 +58,7 @@ const ProjectSection = () => {
             >
               <div>
                 <h1 className="text-lg text-white mb-3">{project.title}</h1>
-                <h4 className="text-sm text-white]">{project.description}</h4>
+                <h4 className="text-sm text-white] line-clamp-2">{project.description}</h4>
               </div>
               <div className="mt-3 flex gap-3">
                 <span className="p-1 rounded-md bg-neutral-700 border hover:border-black hover:bg-neutral-900">
