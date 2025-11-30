@@ -40,31 +40,31 @@ const ProjectSection = () => {
   }
 
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center my-3">
       <div className="w-full md:w-[95%] ml-2">
         <h1 className="text-2xl  text-blue-400 pt-5 ">Project</h1>
         <p className="text-[#8B8B8B] pt-1">
           A collection of my work spanning from blockchain applications to
           full-stack projects, both personal and professional.
         </p>
-        <div className="flex flex-col gap-5 mt-3 md:grid md:grid-cols-2">
+        <div className="flex flex-col gap-5 mt-4  md:grid md:grid-cols-2">
           {projects.map((project, index) => (
             <div
               key={index}
               onClick={() => {
                 handleClick(project.link);
               }}
-              className=" flex flex-col justify-between pt-4 bg-[#1A1A1A] hover:bg-linear-to-r from-zinc-500 via-stone-600 to-zinc-900 md:min-h-[140px] p-3 rounded-lg cursor-pointer transition  "
+              className=" flex flex-col justify-between py-7 px-6 bg-[#1A1A1A] hover:bg-linear-to-r from-zinc-500 via-stone-600 to-zinc-900 md:min-h-[200px] p-3 rounded-lg cursor-pointer transition  "
             >
               <div>
-                <h1 className="text-lg text-white mb-3">{project.title}</h1>
-                <h4 className="text-sm text-white] line-clamp-2">{project.description}</h4>
+                <h1 className="text-lg text-white font-bold mb-3">{project.title}</h1>
+                <h4 className="text-sm text-white line-clamp-2">{project.description}</h4>
               </div>
-              <div className="mt-3 flex gap-3">
-                <span className="p-1 rounded-md bg-neutral-700 border hover:border-black hover:bg-neutral-900">
+              <div className="mt-3 flex gap-3 text-sm"> 
+                <span className="p-1 rounded-md bg-neutral-700 border-neutral-700 hover:border-black hover:bg-neutral-900">
                   {project.tag?.language}
                 </span>
-                <span className="p-1 rounded-md bg-neutral-700 border hover:border-black hover:bg-neutral-900">
+                <span className="p-1 rounded-md bg-neutral-700 border-neutral-700 hover:border-black hover:bg-neutral-900">
                   {project.tag?.liabery}
                 </span>
               </div>
