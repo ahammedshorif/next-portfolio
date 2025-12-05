@@ -1,5 +1,6 @@
 import ProfileSection from "@/components/ProfileSection";
 import Project from "../components/ProjectSection";
+import ExperienceSection from "@/components/ExperienceSection";
 export default function Home() {
   return (
     <main
@@ -15,6 +16,7 @@ export default function Home() {
     >
       <div className=" w-full min-h-screen p-5 md:w-[70%] ">
            <ProfileSection></ProfileSection>
+           <ExperienceSection></ExperienceSection>
            <Project></Project>
       </div>
       

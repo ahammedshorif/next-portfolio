@@ -35,7 +35,7 @@ const ProjectSection = () => {
     },
   ];
 
-  function handleClick(link: string) {
+  function handleClick(link: string){
     location.href = link;
   }
 
@@ -54,13 +54,13 @@ const ProjectSection = () => {
               onClick={() => {
                 handleClick(project.link);
               }}
-              className=" flex flex-col justify-between py-7 px-6 bg-[#1A1A1A] hover:bg-linear-to-r from-zinc-500 via-stone-600 to-zinc-900 md:min-h-[200px] p-3 rounded-lg cursor-pointer transition  "
+              className="flex flex-col justify-between py-7 px-6 bg-[#1A1A1A] hover:bg-linear-to-r from-zinc-500 via-stone-600 to-zinc-900 md:min-h-[200px] p-3 rounded-lg cursor-pointer transition  "
             >
               <div>
                 <h1 className="text-lg text-white font-bold mb-3">{project.title}</h1>
                 <h4 className="text-sm text-white line-clamp-2">{project.description}</h4>
               </div>
-              <div className="mt-3 flex gap-3 text-sm"> 
+              <div className="mt-3 flex gap-3 text-xs"> 
                 <span className="p-1 rounded-md bg-neutral-700 border-neutral-700 hover:border-black hover:bg-neutral-900">
                   {project.tag?.language}
                 </span>
