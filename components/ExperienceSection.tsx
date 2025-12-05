@@ -25,7 +25,7 @@ const ExperienceSection = () => {
           {experiences.map((experience, index) => (
             <div
               key={index}
-              className=" flex flex-col justify-between py-6 px-7 bg-[#1A1A1A] hover:bg-neutral-800 md:min-h-[216px] p-3 rounded-lg cursor-pointer transition  "
+              className=" flex flex-col justify-between min-h-[250px] p-3 bg-[#1A1A1A] rounded-lg cursor-pointer transition hover:bg-neutral-800 md:min-h-[216px] md:py-6 md:px-7 "
             >
               <div className="flex gap-3 my-2 mx-2">
                 <div>
@@ -46,7 +46,7 @@ const ExperienceSection = () => {
                 <div>
                   <h1 className="text-lg text-white font-bold md:text-xl  ">
                     {experience.title}{" "}
-                    <span className="text-sm text-[#8B8B8B] ml-2 ">. {experience.company}</span>
+                    <span className="text-sm text-[#8B8B8B] ml-2">. {experience.company}</span>
                   </h1>
                   <h4 className="text-sm text-[#8B8B8B] my-2 ">
                     {experience.status}
@@ -56,7 +56,7 @@ const ExperienceSection = () => {
 
               </div>
 
-              <div className="text-xs flex gap-2 my-2 mx-2">
+              <div className="text-xs flex gap-2 my-3 mx-2">
                 <span className="p-1 rounded-md bg-neutral-700 border-neutral-700 hover:border-black hover:bg-neutral-900">
                   {experience.tag.tag1}
                 </span>
